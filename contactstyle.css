@@ -1,42 +1,65 @@
-*{
+body{
     background-color: rgb(113, 136, 163);
     color: black;
     font-size: 19px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-h2{
-    background-color: rgb(113, 136, 163);
+
+.form-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    
     font-size: 25px;
     color: rgb(6, 12, 15);
-    margin-right: 85%;
-    text-align: center;
-    
-}
-.para{
-    color: rgb(212, 225, 233);
     text-align: center;
 }
-table,th,td{
-    margin: 1%;
-    padding: auto;
-    border: solid black;
-}
-video{
-    height: 400px;
-    width: 400px;
-    border-radius: 8px;
-    margin-top: 0;
-    padding-top: 0%;
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-
-
-img{
-    border-style: solid;
-    border-color: rgb(15, 1, 1);
-    border-radius: 10px;;
+label {
+    margin-bottom: 5px;
+    color:black;
+    font-size: 14px;
 }
 
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+   
+    outline: none;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+}
+
+button {
+    background-color: rgb(107, 147, 180);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(9, 2, 36);
+  
+}
 .horizontal-nav {
     background-color: rgb(9, 2, 36);
     list-style: none; /* Remove default list styling */
@@ -62,6 +85,7 @@ img{
     color: black; /* Change text color on hover */
     background-color: rgb(107, 147, 180); /* Change background color on hover */
 }
+
 @media screen and (max-width: 600px) {
     .column.side, .column.middle {
       width: 100%;
